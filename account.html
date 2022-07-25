@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=" width=device-width initial-scale=1.0" />
+    <title>Sportrive: Cart Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img class="image" src="images/Sportrive.png" alt="" width="150px">
+        </div>
+          <!--The  HTML element represents
+             a section of a page whose purpose is to provide navigation links,
+             either within the current document or to other documents-->
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="">Home</a></li>
+              <li><a href="">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Account</a></li>
+            </ul>
+          </nav>
+          <img src="images/cart.png" width="30px" height="30px" >
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+      </div>
+
+
+    </div>
+
+<!---------Account Page------->
+ <div class="account-page">
+   <div class="container">
+     <div class="row">
+       <div class="col-2">
+         <img src="images/image1.png" width="100%">
+
+       </div>
+       <div class="col-2">
+         <div class="form-container">
+           <div class="form-btn">
+             <span onclick="login()">Login</span>
+             <span onclick="reg()">Register</span>
+             <hr id="Indicator">
+           </div>
+           <form id="LogInForm">
+             <input type="text" placeholder="Username">
+             <input type="text" placeholder="Password"><br>
+             <button type="submit" class="btn">LogIn</button><br>
+             <a href="#">Forgot Password</a>
+
+           </form>
+           <form id="RegForm" >
+             <input type="text" placeholder="Username">
+             <input type="email" placeholder="Email"><br>
+             <input type="text" placeholder="Password"><br>
+             <button type="submit" class="btn">Register</button>
+
+           </form>
+
+         </div>
+
+       </div>
+
+     </div>
+
+   </div>
+
+ </div>
+
+
+
+<!--footer------------------->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download App</h3>
+            <p>Download the App for Andorid and IOS mobile phone. </p>
+          <div class="app-logo">
+            <img class="play" src="images/play-store.png" alt="">
+            <img class="ios" src="images/app-store.png" alt="">
+          </div>
+        </div>
+          <div class="footer-col-2">
+            <img src="images/Sportrive.png" alt="">
+            <p>Our purpose is to Sustainably Make the pleasure and benefits of sports accessible to many.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links:</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+
+            </ul>
+          </div>
+          <div class="footer-col-3">
+            <h3>Follow Us:</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/utkarsh.manchanda.92">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/in/utkarsh-m-611871ba/">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/u.manchanda/?hl=en">Instagram</a></li>
+              <li><a href="https://www.youtube.com">Youtube</a></li>
+
+            </ul>
+          </div>
+
+        </div>
+        <hr />
+        <p class="Copyright"><strong>Copyright 2022 ----- Utkarsh Manchanda</strong></p>
+
+      </div>
+
+    </div>
+
+<script>
+var logInForm=document.getElementById("LogInForm");
+var regForm=document.getElementById("RegForm");
+var indicator=document.getElementById("Indicator");
+
+function reg(){
+  regForm.style.transform="translateX(0px)";
+  logInForm.style.transform="translateX(0px)";
+  indicator.style.transform="translateX(100px)";
+}
+function login(){
+  regForm.style.transform="translateX(300px)";
+  logInForm.style.transform="translateX(300px)";
+  indicator.style.transform="translateX(0px)";
+}
+
+</script>
+
+
+  </body>
+</html>
